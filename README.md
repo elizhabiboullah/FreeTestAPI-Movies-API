@@ -1,50 +1,121 @@
-# Welcome to your Expo app 👋
+# Movie App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, feature-rich movie browsing application built with React Native and Expo, offering a seamless experience across iOS, Android, and web platforms.
 
-## Get started
+## App Screenshots
 
-1. Install dependencies
+### Movie List View
 
+![Movie List View](./assets/screenshots/movie-list.png)
+*Browse through a curated collection of movies with essential details like title, year, and rating*
+
+### Movie Details
+![Movie Details Screen](./assets/screenshots/movie-details.png)
+*Detailed view of movie information with cast, ratings, and synopsis*
+
+
+## Features
+
+### Core Features
+- **Movie Listing**: Browse through a curated list of movies with essential details like title, year, genre, and rating
+- **Search Functionality**: Real-time search capability to find movies by title
+- **Responsive Design**: Optimized layout for various screen sizes and orientations
+- **Error Handling**: Graceful error handling with retry options
+
+### UI/UX Features
+- **Dark/Light Theme**: Automatic theme switching based on system preferences
+- **Animations**: Smooth transitions and animations using react-native-reanimated
+  - Parallax scrolling effect on iOS
+  - Animated movie card transitions
+- **Custom Components**:
+  - Collapsible sections for organized content display
+  - Themed text and view components for consistent styling
+  - Custom tab bar with haptic feedback
+
+### Technical Features
+- **File-based Routing**: Using Expo Router for efficient navigation
+- **Custom Font Support**: Integration of custom fonts (Space Mono)
+- **Platform-specific Optimizations**: Tailored features for iOS, Android, and web
+- **Image Optimization**: Support for different screen densities (@2x, @3x)
+
+## Getting Started
+
+### Prerequisites
+- Node.js (LTS version)
+- npm or yarn
+- Expo CLI
+- iOS Simulator (for iOS development)
+- Android Studio (for Android development)
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
    ```bash
    npm install
+   # or
+   yarn install
    ```
 
-2. Start the app
+### Running the App
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+#### Development Mode
 ```bash
-npm run reset-project
+# Start the development server
+npm start
+# or
+yarn start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Then:
+- Press `i` to open in iOS simulator
+- Press `a` to open in Android emulator
+- Press `w` to open in web browser
 
-## Learn more
+#### Platform Specific
+```bash
+# iOS
+npm run ios
+# or
+yarn ios
 
-To learn more about developing your project with Expo, look at the following resources:
+# Android
+npm run android
+# or
+yarn android
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# Web
+npm run web
+# or
+yarn web
+```
 
-## Join the community
+## Tech Stack
 
-Join our community of developers creating universal apps.
+- **Framework**: React Native
+- **Development Platform**: Expo
+- **Navigation**: Expo Router
+- **Animations**: react-native-reanimated
+- **Styling**: React Native StyleSheet
+- **UI Components**: Custom themed components
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Project Structure
+
+```
+movie-app/
+├── app/                 # Application screens and navigation
+├── assets/             # Static assets (images, fonts)
+├── components/         # Reusable UI components
+├── constants/          # App constants and theme
+├── hooks/              # Custom React hooks
+├── services/           # API and other services
+└── scripts/            # Development and build scripts
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
