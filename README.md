@@ -6,11 +6,11 @@ A modern, feature-rich movie browsing application built with React Native and Ex
 
 ### Movie List View
 
-![Movie List View](./assets/screenshots/movie-list.png)
+![Movie List View](./assets/images/movie-list.png)
 *Browse through a curated collection of movies with essential details like title, year, and rating*
 
 ### Movie Details
-![Movie Details Screen](./assets/screenshots/movie-details.png)
+![Movie Details Screen](./assets/images/movie-details.png)
 *Detailed view of movie information with cast, ratings, and synopsis*
 
 
